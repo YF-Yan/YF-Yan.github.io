@@ -24,6 +24,16 @@
             text-align: center;
         }
 
+        .profile-img {
+            width: 150px; /* 照片的宽度 */
+            height: 150px; /* 照片的高度 */
+            border-radius: 50%; /* 变成圆形 */
+            object-fit: cover; /* 保证照片不变形 */
+            border: 3px solid #eaeaea; /* 加一圈淡灰色的边框，更有质感 */
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 加一点淡淡的阴影 */
+        }
+
         h1 {
             margin: 0 0 10px 0;
             color: #2c3e50;
@@ -88,6 +98,7 @@
 <body>
 
     <header>
+        <img src="yyf.jpg" alt="闫一飞" class="profile-img">
         <h1>闫一飞 (Yan Yifei)</h1>
         <p>东北大学（秦皇岛） · 计算机科学与技术专业 · 2023级本科生</p>
         <div class="contact-info">
