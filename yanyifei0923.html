@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闫一飞 (Yan Yifei) - 个人主页</title>
+    <style>
+        /* 极简学术风 CSS 样式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info a {
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .section-content {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #ecf0f1;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>闫一飞 (Yan Yifei)</h1>
+        <p>东北大学（秦皇岛） · 计算机科学与技术专业 · 2023级本科生</p>
+        <div class="contact-info">
+            <a href="mailto:your-email@example.com">📧 Email</a> |
+            <a href="https://github.com/your-github-username" target="_blank">💻 GitHub</a> |
+            <a href="https://codeforces.com/profile/your-cf-handle" target="_blank">🏆 Codeforces</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>👨‍💻 About Me (关于我)</h2>
+        <div class="section-content">
+            <p>你好！我是闫一飞，目前是东北大学秦皇岛分校计算机专业的本科生。我始终以 <strong>“通过构建来理解，通过优化来探究”</strong>
+                的理念驱动学习。我对计算机底层系统（操作系统、计算机体系结构、数据库存储引擎）以及算法设计有着浓厚的兴趣。</p>
+            <p>目前，我正在积极寻找计算机系统/数据库方向的研究生保研机会。在业余时间，我热衷于参与各类算法竞赛（XCPC、蓝桥杯等），享受在有限时间内编写低复杂度、高鲁棒性代码的过程。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎓 Education (教育背景)</h2>
+        <div class="section-content">
+            <h3>东北大学秦皇岛分校 (NEUQ)</h3>
+            <p>学士，计算机科学与技术专业 (2023 - 2027 预期)</p>
+            <ul>
+                <li><strong>学业成绩：</strong> 专业排名 19/196 (前 10%)，均分 90.176。</li>
+                <li><strong>核心课程：</strong> 算法设计与分析 (95)、编译原理 (95)、汇编语言 (95)、计算机组成原理 (93)。</li>
+                <li><strong>荣誉奖项：</strong> 校级学业奖学金、创新创业奖学金、校级三好学生。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>🛠️ Projects (项目经历)</h2>
+        <div class="section-content">
+            <h3>1. Mini-Kernel：用户态微内核仿真系统</h3>
+            <p>基于 C/S 架构，在用户态模拟操作系统核心机制，重点探索存储优化与并发控制。</p>
+            <ul>
+                <li><strong>架构解耦：</strong> 设计了基于共享内存的异步消息队列，成功解耦 GUI 与内核进程。</li>
+                <li><strong>存储引擎优化：</strong> 为自研 FAT 文件系统设计了采用 <span class="highlight">Write-Back 策略的 LRU 缓冲池</span>，将
+                    I/O 次数降低了约 40%。</li>
+                <li><strong>并发控制：</strong> 引入读者-写者锁（RW-Lock）机制，解决多用户并发访问冲突，提升系统吞吐量。</li>
+            </ul>
+            <div>
+                <span class="tag">C/C++</span> <span class="tag">Operating System</span> <span class="tag">Buffer
+                    Pool</span> <span class="tag">Concurrency</span>
+            </div>
+        </div>
+
+        <div class="section-content">
+            <h3>2. MIPS-Lite：五级流水线处理器核</h3>
+            <p>从 RTL 级出发，完整实现支持 56 条 MIPS32 指令的五级流水线 CPU 核。</p>
+            <ul>
+                <li><strong>流水线冒险控制：</strong> 摒弃简单的全局停顿，独立设计动态数据前递（Forwarding）与 Load-Use 互锁机制，将吞吐率提升约 18%。</li>
+                <li><strong>自动化验证：</strong> 构建基于指令轨迹比对的验证框架，系统验证极端冒险场景下的硬件行为。</li>
+            </ul>
+            <div>
+                <span class="tag">Verilog</span> <span class="tag">Computer Architecture</span> <span class="tag">CPU
+                    Design</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>🏆 Competitions (竞赛与奖项)</h2>
+        <div class="section-content">
+            <ul>
+                <li><strong>国家二等奖</strong> - 睿抗机器人开发者大赛 (RoboCom)</li>
+                <li><strong>国家三等奖</strong> - 蓝桥杯全国软件和信息技术专业人才大赛 (C/C++ A组)</li>
+                <li><strong>省一等奖</strong> - 全国大学生数学竞赛</li>
+                <li><strong>省银奖</strong> - 河北省大学生程序设计竞赛 (XCPC 体系)</li>
+            </ul>
+            <p><em>长期的 Codeforces 刷题与算法竞赛训练，培养了我极致的代码落地能力和团队协作抗压能力。</em></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚡ Skills (技能清单)</h2>
+        <div class="section-content">
+            <ul>
+                <li><strong>编程语言：</strong> C/C++, Verilog, Python</li>
+                <li><strong>系统开发：</strong> Linux 环境编程, 多线程并发控制, 内存管理</li>
+                <li><strong>基础理论：</strong> 数据结构与算法, 操作系统机制, 编译原理, 数据库原理 (LRU/存储/索引机制)</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer
+        style="text-align: center; margin-top: 40px; border-top: 1px solid #eaeaea; padding-top: 20px; color: #7f8c8d; font-size: 0.9em;">
+        <p>&copy; 2026 Yan Yifei. 欢迎导师和同学通过邮件联系我！</p>
+    </footer>
+
+</body>
+
+</html>
