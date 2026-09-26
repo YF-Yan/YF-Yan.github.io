@@ -1,0 +1,15 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/
+
+# temp downloads
+image/hit_try1.png
+image/hit_try2.png
+image/neu_try1.png
+image/neu_try2.png
+image/hit_alt1.png
+image/hit_logo_dl.svg
+image/neu_logo_dl.svg
