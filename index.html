@@ -18,7 +18,7 @@
             --dark-blue: #1E3A8A;
             --light-bg: #07080c;
             --page-bg1: #10131a;
-            --card-bg: rgba(16, 18, 26, 0.55);
+            --card-bg: #161922;
             --card-border: rgba(255, 255, 255, 0.12);
             --text-main: rgba(244, 245, 247, 0.92);
             --text-sub: rgba(210, 218, 230, 0.58);
@@ -29,6 +29,10 @@
             --accent-green: #10B981;
             --accent-purple: #8B5CF6;
             --ease: cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
         }
 
         html {
@@ -104,9 +108,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(10, 11, 16, 0.72);
-            backdrop-filter: blur(16px) saturate(1.2);
-            -webkit-backdrop-filter: blur(16px) saturate(1.2);
+            background-color: #0e1117;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
             z-index: 3000 !important;
@@ -205,14 +207,14 @@
         }
 
         .hero-contact a {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: #232838;
             padding: 8px 15px;
             border-radius: 20px;
             font-size: 0.95em;
             display: flex;
             align-items: center;
             gap: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.12);
         }
 
         .hero-contact a:hover {
@@ -242,13 +244,9 @@
 
         .card {
             background: var(--card-bg);
-            backdrop-filter: blur(22px) saturate(1.25);
-            -webkit-backdrop-filter: blur(22px) saturate(1.25);
             border-radius: 20px;
             padding: 30px;
-            box-shadow:
-                0 16px 48px rgba(0, 0, 0, 0.35),
-                inset 0 1px 0 rgba(255, 255, 255, 0.06);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
             border: 1px solid var(--card-border);
             margin-bottom: 40px;
             transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
@@ -256,10 +254,8 @@
         }
 
         .card:hover {
-            box-shadow:
-                0 22px 56px rgba(0, 0, 0, 0.42),
-                inset 0 1px 0 rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.18);
+            box-shadow: 0 14px 32px rgba(0, 0, 0, 0.34);
+            border-color: rgba(255, 255, 255, 0.14);
         }
 
         .section-title {
@@ -396,9 +392,7 @@
 
         .edu-stat-item {
             flex: 1;
-            background-color: rgba(16, 18, 26, 0.45);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
+            background-color: #1c2030;
             border-radius: 12px;
             padding: 15px;
             border: 1px solid rgba(255,255,255,0.1);
@@ -438,9 +432,7 @@
         }
 
         .course-item {
-            background-color: rgba(16, 18, 26, 0.4);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background-color: #1c2030;
             border-radius: 10px;
             padding: 10px 15px;
             display: flex;
@@ -664,9 +656,7 @@
         .carousel-container {
             max-width: 900px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(20px) saturate(1.25);
-            -webkit-backdrop-filter: blur(20px) saturate(1.25);
+            background: #161922;
             border: 1px solid rgba(255,255,255,0.12);
             border-radius: 16px;
             padding: 20px;
@@ -928,11 +918,7 @@
         .splash-veil {
             position: absolute;
             inset: 0;
-            background:
-                radial-gradient(ellipse 65% 50% at 50% 46%, rgba(22, 28, 40, 0.75), transparent 68%),
-                rgba(4, 5, 8, 0.78);
-            backdrop-filter: blur(20px) saturate(1.05);
-            -webkit-backdrop-filter: blur(20px) saturate(1.05);
+            background: #07080c;
             opacity: 0;
             animation: splashVeilIn 0.75s var(--ease) forwards;
         }
@@ -1106,7 +1092,6 @@
             max-height: calc(100vh - 140px);
             max-height: calc(100dvh - 140px);
             overflow: auto;
-            backdrop-filter: blur(8px);
         }
 
         .hero-section.snap-page {
@@ -1216,9 +1201,7 @@
         .h-card {
             flex: 0 0 min(78%, 420px);
             scroll-snap-align: start;
-            background: rgba(16, 18, 26, 0.55);
-            backdrop-filter: blur(18px) saturate(1.2);
-            -webkit-backdrop-filter: blur(18px) saturate(1.2);
+            background: #1c2030;
             border-radius: 22px;
             padding: 28px 26px;
             border: 1px solid rgba(255,255,255,0.1);
@@ -1268,15 +1251,13 @@
             gap: 16px;
             padding: 18px 20px;
             border-radius: 18px;
-            background: rgba(16, 18, 26, 0.5);
-            backdrop-filter: blur(16px) saturate(1.15);
-            -webkit-backdrop-filter: blur(16px) saturate(1.15);
+            background: #1c2030;
             border: 1px solid rgba(255,255,255,0.12);
             box-shadow: 0 12px 32px rgba(0,0,0,0.28);
         }
 
         .edu-pill.is-next {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(15, 23, 42, 0.95));
+            background: linear-gradient(135deg, #1e3a8a, #152038);
             color: #fff;
             border-color: rgba(255,255,255,0.12);
         }
@@ -1345,62 +1326,65 @@
             .snap-page .card { max-height: none; }
         }
 
-        /* glass refinements for dark page */
+        /* solid surfaces */
         .course-item {
-            background: rgba(16, 18, 26, 0.4) !important;
+            background: #1c2030 !important;
             border: 1px solid rgba(255,255,255,0.08);
         }
 
         .edu-stat-item {
-            background: rgba(16, 18, 26, 0.45) !important;
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
+            background: #1c2030 !important;
             border: 1px solid rgba(255,255,255,0.1) !important;
             color: rgba(244,245,247,0.9);
         }
         .carousel-container {
-            background: rgba(16, 18, 26, 0.5) !important;
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: #161922 !important;
             border: 1px solid rgba(255,255,255,0.12) !important;
         }
         .carousel-view {
-            background-color: rgba(255,255,255,0.04) !important;
+            background-color: #10131a !important;
         }
-        .award-box.national,
-        .award-box.provincial,
+        .award-box.national {
+            background: #2a2416 !important;
+            border-color: rgba(245, 158, 11, 0.28) !important;
+            color: #f6e7c1 !important;
+        }
+        .award-box.provincial {
+            background: #1a2740 !important;
+            border-color: rgba(91, 140, 255, 0.28) !important;
+            color: #d6e4ff !important;
+        }
+        .award-box.university,
         .award-box.school {
-            background: rgba(255,255,255,0.05) !important;
-            border-color: rgba(255,255,255,0.1) !important;
-            color: rgba(244,245,247,0.9) !important;
+            background: #261c38 !important;
+            border-color: rgba(139, 92, 246, 0.28) !important;
+            color: #e6dcff !important;
         }
+        .award-box.national .award-subtitle { color: #f0c36a !important; }
+        .award-box.provincial .award-subtitle { color: #9cbcff !important; }
+        .award-box.university .award-subtitle,
+        .award-box.school .award-subtitle { color: #c4b5fd !important; }
 
         .h-card {
-            background: rgba(16, 18, 26, 0.55) !important;
-            backdrop-filter: blur(18px) saturate(1.2);
-            -webkit-backdrop-filter: blur(18px) saturate(1.2);
-            border: 1px solid rgba(255,255,255,0.12) !important;
+            background: #1c2030 !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
             color: rgba(244,245,247,0.92);
-            box-shadow: 0 16px 40px rgba(0,0,0,0.32) !important;
+            box-shadow: none !important;
         }
         .h-card h3 { color: rgba(244,245,247,0.95) !important; }
         .h-card p { color: rgba(210,218,230,0.62) !important; }
 
         .edu-pill:not(.is-next) {
-            background: rgba(16, 18, 26, 0.5) !important;
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255,255,255,0.12) !important;
-            box-shadow: 0 12px 32px rgba(0,0,0,0.28) !important;
+            background: #1c2030 !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            box-shadow: none !important;
         }
         .edu-pill:not(.is-next) h3 { color: rgba(244,245,247,0.92) !important; }
         .edu-pill:not(.is-next) p { color: rgba(210,218,230,0.58) !important; }
 
         .edu-pill.is-next {
-            background: linear-gradient(145deg, rgba(29, 78, 216, 0.35), rgba(15, 23, 42, 0.65)) !important;
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            border: 1px solid rgba(147, 180, 255, 0.28) !important;
+            background: linear-gradient(145deg, #1e3a8a, #152038) !important;
+            border: 1px solid rgba(147, 180, 255, 0.35) !important;
         }
 
         .school-logo-link {
@@ -1444,12 +1428,10 @@
         .edu-stat-item,
         .course-item,
         .project-item,
-        .award-box,
         .highlight-box {
-            background: rgba(255,255,255,0.04) !important;
+            background: #1c2030 !important;
             border: 1px solid rgba(255,255,255,0.08) !important;
             color: rgba(244,245,247,0.9);
-            backdrop-filter: blur(10px);
         }
         .course-item, .award-box, .edu-stat-item, .project-item, .highlight-box {
             border-radius: 12px;
@@ -1477,27 +1459,24 @@
         }
 
     
-        /* force glass: certificate carousel (kill leftover white) */
         #awards .card,
         #awards .carousel-container {
-            background: rgba(16, 18, 26, 0.42) !important;
-            background-color: rgba(16, 18, 26, 0.42) !important;
-            backdrop-filter: blur(20px) saturate(1.25) !important;
-            -webkit-backdrop-filter: blur(20px) saturate(1.25) !important;
-            border: 1px solid rgba(255,255,255,0.12) !important;
-            box-shadow: 0 16px 40px rgba(0,0,0,0.35) !important;
+            background: #161922 !important;
+            background-color: #161922 !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            box-shadow: none !important;
         }
         #awards .carousel-container {
-            background: rgba(255,255,255,0.06) !important;
-            background-color: rgba(255,255,255,0.06) !important;
+            background: #1c2030 !important;
+            background-color: #1c2030 !important;
         }
         #awards .carousel-view {
-            background: rgba(0,0,0,0.25) !important;
-            background-color: rgba(0,0,0,0.25) !important;
+            background: #10131a !important;
+            background-color: #10131a !important;
             border: 1px solid rgba(255,255,255,0.08) !important;
         }
         #awards .thumbnail-item {
-            background-color: rgba(255,255,255,0.06) !important;
+            background-color: #232838 !important;
         }
         #awards .cert-carousel-section {
             border-top: 1px dashed rgba(255,255,255,0.12) !important;
@@ -1512,9 +1491,7 @@
             border-radius: 12px;
             font-size: 0.9em;
             color: rgba(210,218,230,0.7);
-            background: rgba(255,255,255,0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: #1c2030;
             border: 1px solid rgba(255,255,255,0.1);
             border-left: 3px solid rgba(148,163,184,0.7);
         }
@@ -1588,7 +1565,7 @@
             margin-top: 18px;
             min-height: min(58vh, 520px);
             padding: 28px 36px 36px 48px;
-            background: rgba(255, 252, 246, 0.55);
+            background: #fffaf3;
             border: 1px solid rgba(139, 46, 46, 0.14);
             box-shadow: 0 10px 36px rgba(60, 40, 20, 0.06);
         }
@@ -1799,6 +1776,182 @@
             font-family: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
         }
 
+        .nav-toggle {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: #232838;
+            color: rgba(244,245,247,0.92);
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 900px) {
+            .nav-toggle { display: inline-flex; }
+            .navbar { padding: 10px 16px; }
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 4px;
+                margin: 0;
+                padding: 8px 12px 14px;
+                background: #0e1117;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+                box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+            }
+            .nav-links.is-open { display: flex; }
+            .nav-links a {
+                padding: 12px 14px;
+                border-radius: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html { scroll-snap-type: none; }
+
+            .snap-page {
+                min-height: 0;
+                scroll-snap-align: none;
+                scroll-snap-stop: normal;
+                display: block;
+                padding: 8px 16px 32px;
+            }
+            .home-page.snap-page {
+                padding-top: 84px;
+            }
+            .snap-page .card {
+                max-height: none;
+                overflow: visible;
+                padding: 18px 16px;
+                border-radius: 16px;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            .hero-name { font-size: 1.65rem; }
+            .hero-subtitle { font-size: 0.98rem; }
+            .page-sub { font-size: 0.95rem; margin-bottom: 16px; }
+            .page-headline { font-size: 1.5rem; }
+            .hero-name,
+            .hero-subtitle,
+            .page-sub,
+            .page-headline { text-wrap: balance; }
+            .section-title { font-size: 1.28rem; margin-bottom: 16px; }
+
+            .home-left .hero-contact {
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+            .home-left .hero-contact a {
+                justify-content: center;
+                width: 100%;
+            }
+            .home-about-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .h-card {
+                padding: 16px;
+                border-radius: 14px;
+                min-height: 0;
+                flex-basis: auto;
+            }
+
+            .edu-pill {
+                padding: 14px;
+                gap: 12px;
+                align-items: flex-start;
+            }
+            .edu-pill h3 { font-size: 1.02rem !important; line-height: 1.35; }
+            .edu-stats-container,
+            .courses-grid { gap: 10px; }
+            .stat-main-value { font-size: 1.7rem; }
+
+            .project-item { padding: 16px; }
+            .project-title { font-size: 1.05rem; line-height: 1.4; }
+            .project-header { align-items: flex-start; gap: 6px; }
+            .project-header > div { min-width: 0; }
+            .project-layout {
+                flex-direction: column !important;
+                gap: 16px !important;
+            }
+            .project-aside {
+                width: 100% !important;
+                display: grid !important;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 12px !important;
+            }
+            .project-aside figure { margin: 0; }
+            .project-aside:has(figure:only-child) {
+                grid-template-columns: minmax(0, 200px);
+            }
+            .chart-row {
+                scroll-snap-type: x mandatory;
+                gap: 12px !important;
+            }
+            .chart-row figure {
+                flex: 0 0 86% !important;
+                min-width: 0 !important;
+                scroll-snap-align: start;
+            }
+
+            .award-tabs {
+                flex-direction: column !important;
+                align-items: stretch !important;
+                gap: 10px !important;
+            }
+            .award-tab-btn { justify-content: center; width: 100%; }
+            .award-box { align-items: flex-start; }
+            .award-badge { white-space: normal; text-align: center; }
+
+            .carousel-layout { gap: 12px; }
+            .carousel-container { padding: 12px; }
+            .carousel-view {
+                min-height: 200px;
+                padding: 36px 8px 12px;
+            }
+            .carousel-img { max-height: 220px; }
+            .cert-tags-container { flex-wrap: wrap; justify-content: center; gap: 10px 16px; }
+            .cert-title-display { font-size: 1.1rem; }
+            .nav-btn { width: 34px; height: 34px; }
+
+            .poems-sheet { padding: 18px 12px 22px 28px; }
+            .poem-title-main { letter-spacing: 0.04em; font-size: 1.35rem; }
+            .poem-vertical {
+                gap: 8px;
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 4px;
+            }
+            .poem-vline { font-size: 1rem; letter-spacing: 0.22em; }
+            .poem-meta-bar { justify-content: flex-start; gap: 8px 14px; }
+
+            #footer.snap-page,
+            #footer.footer-page {
+                min-height: 0 !important;
+                padding: 36px 16px 48px !important;
+            }
+
+            .reveal,
+            .reveal-left,
+            .reveal-right {
+                filter: none;
+                transform: none;
+            }
+        }
+
     </style>
 </head>
 
@@ -1837,6 +1990,9 @@
             <a href="#skills"><i class="fas fa-cogs"></i> 技能清单</a>
             <a href="#poems"><i class="fas fa-feather-alt"></i> 闲笔诗词</a>
         </div>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <nav class="snap-dots" id="snapDots" aria-label="页面导航">
@@ -2009,7 +2165,7 @@
                     <li><strong>控制与可解释性：</strong> 通过序列掩码实现精准的诗词格式控制，并利用预测概率热力图对模型内部决策逻辑进行可视化分析。</li>
                 </ul>
             
-                <div style="display: flex; gap: 15px; margin: 20px 0; overflow-x: auto; padding-bottom: 5px;">
+                <div class="chart-row" style="display: flex; gap: 15px; margin: 20px 0; overflow-x: auto; padding-bottom: 5px;">
                     <figure style="margin: 0; flex: 1; min-width: 220px; transition: transform 0.3s;"
                         onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
                         <img src="image/report_loss_curve.png" alt="Loss 曲线"
@@ -2050,7 +2206,7 @@
                 </div>
             </div>
         
-            <div style="display: flex; gap: 30px; align-items: flex-start; margin-top: 10px;">
+            <div class="project-layout" style="display: flex; gap: 30px; align-items: flex-start; margin-top: 10px;">
         
                 <div style="flex: 1;">
                     <p class="project-desc" style="margin-top: 0;">一款基于 Python 与 PyQt6 开发的轻量级桌面效率工具，集成了地理位置感知、任务持久化与自定义交互逻辑。</p>
@@ -2066,7 +2222,7 @@
                     </div>
                 </div>
         
-                <div style="display: flex; flex-direction: column; gap: 20px; width: 200px; flex-shrink: 0;">
+                <div class="project-aside" style="display: flex; flex-direction: column; gap: 20px; width: 200px; flex-shrink: 0;">
                     <figure style="margin: 0; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'"
                         onmouseout="this.style.transform='scale(1)'">
                         <img src="image/memo1.jpg" alt="主界面"
@@ -2094,12 +2250,12 @@
                 </h3>
             </div>
         
-            <div style="display: flex; gap: 30px; align-items: flex-start; margin-top: 10px;">
+            <div class="project-layout" style="display: flex; gap: 30px; align-items: flex-start; margin-top: 10px;">
         
                 <div style="flex: 1;">
                     <div
-                        style="background-color: #F0F9FF; border-left: 4px solid var(--primary-blue); padding: 10px 15px; border-radius: 4px; margin-bottom: 12px;">
-                        <span style="color: var(--dark-blue); font-weight: bold; font-size: 0.95em;">
+                        style="background-color: #1a2740; border-left: 4px solid var(--primary-blue); padding: 10px 15px; border-radius: 8px; margin-bottom: 12px;">
+                        <span style="color: #d6e4ff; font-weight: bold; font-size: 0.95em;">
                             🏅 项目荣誉：2024 年亚太地区大学生数学建模竞赛 (APMCM) 国家三等奖
                         </span>
                     </div>
@@ -2121,7 +2277,7 @@
                     </div>
                 </div>
         
-                <div style="display: flex; flex-direction: column; gap: 10px; width: 180px; flex-shrink: 0;">
+                <div class="project-aside" style="display: flex; flex-direction: column; gap: 10px; width: 180px; flex-shrink: 0;">
                     <figure style="margin: 0; transition: transform 0.3s ease, box-shadow 0.3s ease;"
                         onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
                         <a href="Apmcm24207440.pdf" target="_blank" title="点击阅读完整研究论文">
@@ -2441,6 +2597,7 @@
 
             pages.forEach(preparePage);
 
+            const narrow = window.matchMedia('(max-width: 768px)').matches;
             const io = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     const page = entry.target;
@@ -2454,7 +2611,7 @@
                         hideItems(page);
                     }
                 });
-            }, { threshold: 0.35 });
+            }, { threshold: narrow ? 0.01 : 0.35 });
 
             pages.forEach((p) => io.observe(p));
 
@@ -2472,6 +2629,22 @@
                         e.preventDefault();
                     }
                 }, { passive: false });
+            });
+        })();
+
+        (function mobileNav() {
+            const btn = document.getElementById('navToggle');
+            const links = document.querySelector('.nav-links');
+            if (!btn || !links) return;
+            const setOpen = (open) => {
+                links.classList.toggle('is-open', open);
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.setAttribute('aria-label', open ? '关闭菜单' : '打开菜单');
+                btn.innerHTML = open ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            };
+            btn.addEventListener('click', () => setOpen(!links.classList.contains('is-open')));
+            links.querySelectorAll('a').forEach((a) => {
+                a.addEventListener('click', () => setOpen(false));
             });
         })();
 
