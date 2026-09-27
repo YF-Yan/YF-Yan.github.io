@@ -1532,6 +1532,9 @@
                 radial-gradient(700px 420px at 88% 90%, rgba(120, 90, 60, 0.05), transparent 60%),
                 #F3EEE4;
             color: #1a1a1a;
+            align-items: flex-start;
+            padding-top: 96px;
+            padding-bottom: 56px;
         }
         #poems .card {
             background: transparent !important;
@@ -1560,10 +1563,17 @@
             font-weight: 400;
         }
 
+        .poems-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 18px;
+        }
+
         .poems-sheet {
             position: relative;
-            margin-top: 18px;
-            min-height: min(58vh, 520px);
+            margin-top: 0;
+            min-height: 0;
             padding: 28px 36px 36px 48px;
             background: #fffaf3;
             border: 1px solid rgba(139, 46, 46, 0.14);
@@ -2468,6 +2478,7 @@
                 <h2 class="section-title reveal" style="--d:60ms"><i class="fas fa-feather-alt"></i> 闲笔 · 诗词</h2>
                 <p class="poems-intro reveal" style="--d:100ms">夜深偶得，随手记之。雨声入耳，缘字难书。</p>
 
+                <div class="poems-list">
                 <article class="poems-sheet reveal" style="--d:160ms">
                     <div class="poem-head">
                         <div class="poem-en">Ci · Bu Suan Zi</div>
@@ -2493,6 +2504,35 @@
                         <span><i class="fas fa-map-marker-alt"></i>河北 · 秦皇岛</span>
                     </div>
                 </article>
+
+                <article class="poems-sheet reveal" style="--d:220ms">
+                    <div class="poem-head">
+                        <div class="poem-en">Ci · Lin Jiang Xian</div>
+                        <div class="poem-no">02</div>
+                        <h3 class="poem-title-main">临江仙 · 秋夜感怀</h3>
+                        <div class="poem-ci-note">词牌 · 临江仙</div>
+                    </div>
+
+                    <div class="poem-vertical" aria-label="竖排诗词，自右向左读">
+                        <div class="poem-vline">十五春秋求学路，</div>
+                        <div class="poem-vline">几番秋雨秋风。</div>
+                        <div class="poem-vline">一朝上岸却忡忡。</div>
+                        <div class="poem-vline">欲闲闲不得，</div>
+                        <div class="poem-vline">恐负岁华功。</div>
+                        <div class="poem-vline is-break" aria-hidden="true">　</div>
+                        <div class="poem-vline">一夜寒侵窗牖冷，</div>
+                        <div class="poem-vline">晓看霜色千重。</div>
+                        <div class="poem-vline">前程未定问西东。</div>
+                        <div class="poem-vline">归舟虽已系，</div>
+                        <div class="poem-vline">犹惧浪千重。</div>
+                    </div>
+
+                    <div class="poem-meta-bar">
+                        <span><i class="far fa-clock"></i>2026年9月27日 夜</span>
+                        <span><i class="fas fa-map-marker-alt"></i>河北 · 秦皇岛</span>
+                    </div>
+                </article>
+                </div>
             </div>
         </section>
 
